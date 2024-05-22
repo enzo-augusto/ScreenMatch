@@ -13,7 +13,7 @@ public class DesafioGoogleBooks
         String nomeDoLivro = busca.nextLine();
         String nomeDoLivroFormatado = nomeDoLivro.replace(" ", "+");
 
-        String chave = "AIzaSyDEYSPW6dSJt9YpUFw4DkDgUMa_D4O8pLg";
+        String chave = "yourAPIKeyHere";
         String endereco = "https://www.googleapis.com/books/v1/volumes?q=" +nomeDoLivroFormatado+ "&" + chave + "=yourAPIKey";
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(endereco)).build();
