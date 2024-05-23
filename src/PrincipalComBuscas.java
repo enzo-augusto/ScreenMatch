@@ -20,7 +20,7 @@ public class PrincipalComBuscas
         // Substituir espaços por "+"
         String nomeDoFilmeFormatado = nome.replace(" ", "+");
 
-        String chave = "90c4e57a";
+        String chave = "yourKeyHere";
         String endereco = "https://www.omdbapi.com/?t=" + nomeDoFilmeFormatado + "&apikey=" +chave;
 
         HttpClient client = HttpClient.newHttpClient();
